@@ -1,0 +1,42 @@
+.main {
+    position: relative;
+    height: 100vh;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin-left: 107px;
+
+        &_bg {
+            position: absolute;
+            top: 126px;
+            left: 0;
+            width: 100%;
+            height: 954px;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        &_title {
+            color: #FFF;
+            font-family: Kung-Fu Master;
+            font-size: 80px;
+            font-weight: 400;
+            margin-left: 79px;
+        }
+
+        &_text {
+            color: #FFF;
+            text-align: center;
+            font-size: 24px;
+            margin: 60px 0 30px;
+            max-width: 1040px;
+        }
+
+        &_btn {
+            margin-left: 437px;
+        }
+    }
+}

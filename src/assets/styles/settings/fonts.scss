@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'KungFuMaster';
+    src: url('@/assets/fonts/KungFuMaster-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('@/assets/fonts/Poppins-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+$Raleway: ('Regular', 400), ('Medium', 500), ('Bold', 700);
+
+@each $name, $weight in $Raleway {
+    @font-face {
+        font-family: 'Raleway';
+        src: url('@/assets/fonts/Raleway-#{$Raleway}.otf');
+        font-style: normal;
+        font-weight: $weight;
+    }
+}
